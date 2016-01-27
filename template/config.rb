@@ -1,5 +1,19 @@
 require 'slim'
 
+set :css_dir, 'css'
+set :js_dir, 'js'
+set :images_dir, 'img'
+set :relative_links, true
+set :slim, { :pretty => true, :sort_attrs => false, :format => :html }
+
+###
+# Compass configuration
+###
+compass_config do |config|
+  config.output_style = :expanded
+  config.line_comments = false
+end
+
 ###
 # Page options, layouts, aliases and proxies
 ###
